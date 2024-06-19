@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Formulario de Registro Facebook</string>
+    <string name="txtViewNombre">Nombre</string>
+    <string name="txtCorreo">Tu dirección de correo electrónico:</string>
+    <string name="txtApellido">Apellidos:</string>
+    <string name="txtContrasena">Contraseña nueva:</string>
+    <string name="txtSexo">Sexo:</string>
+    <string name="txtFechaNacimiento">Fecha de nacimiento:</string>
+    <string name="btnRegistrate">Registrate</string>
+    <string name="autoCompleteGener">Genero</string>
+    <string name="rdoBtnMasculino">Masculino</string>
+    <string name="rdoBtnFemenino">Femenino</string>
+    <string name="txtPorque">¿Por qué tengo que dar esta información?</string>
+    <string name="inputFechaNacimiento">Fecha Nacimientop</string>
+    <string name="inputFechaNac">Fecha Nacimiento</string>
+    <string name="inputtFechaNac" />
+    <string name="inputSexo" />
+    <string name="inputContras" />
+    <string name="inputCorreo" />
+    <string name="inputApellido" />
+    <string name="inputNombre" />
+    <string name="txtNombre">Nombre:</string>
+</resources>

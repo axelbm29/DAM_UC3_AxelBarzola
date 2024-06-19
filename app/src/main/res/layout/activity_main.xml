@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLighterBlue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="230dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Regístrate"
+        android:textColor="@color/colorFacebookBlue"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="148dp"
+        android:text="Es gratis (y lo seguirá siendo)."
+        android:textColor="@color/colorMediumBlue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/txtViewNombre"
+        android:layout_width="105dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="12dp"
+        android:drawableLeft="@drawable/nombre"
+        android:text="@string/txtNombre"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/txtViewApellidos"
+        android:layout_width="108dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/nombre"
+        android:text="@string/txtApellido"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewNombre" />
+
+    <TextView
+        android:id="@+id/txtViewCorreo"
+        android:layout_width="127dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:drawableLeft="@drawable/baseline_email_245"
+        android:text="@string/txtCorreo"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewApellidos" />
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="147dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:drawableLeft="@drawable/baseline_password_245"
+        android:text="@string/txtContrasena"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCorreo" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="72dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="10dp"
+        android:drawableLeft="@drawable/baseline_transgender_245"
+        android:text="@string/txtSexo"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        app:layout_constraintEnd_toStartOf="@+id/radioGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtContrasena" />
+
+    <TextView
+        android:id="@+id/txtFechaNacimiento"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:drawableLeft="@drawable/birth"
+        android:text="@string/txtFechaNacimiento"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorFacebookBlue"
+        app:layout_constraintEnd_toStartOf="@+id/editTextDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSexo" />
+
+    <Button
+        android:id="@+id/btnRegistrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#41BF33"
+        android:drawableLeft="@drawable/baseline_how_to_reg_24"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/btnRegistrate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewPorque" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/inputNombre"
+        app:layout_constraintBottom_toBottomOf="@+id/txtViewNombre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtViewNombre" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="203dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/inputApellido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="201dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="@string/inputCorreo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="202dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/inputContras"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="203dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="38dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:text="@string/inputtFechaNac" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="45dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="99dp"
+            android:layout_height="30dp"
+            android:text="@string/rdoBtnMasculino"
+            android:textColorLink="@color/black"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="103dp"
+            android:layout_height="30dp"
+            android:text="@string/rdoBtnFemenino"
+            android:textColorLink="@color/black"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtViewPorque"
+        android:layout_width="203dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="37dp"
+        android:text="@string/txtPorque"
+        android:textColor="@color/colorFacebookBlue"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
